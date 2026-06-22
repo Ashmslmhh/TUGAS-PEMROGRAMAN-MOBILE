@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/FragmentPage1">
+
+
+    <fragment
+        android:id="@+id/FragmentPage1"
+        android:name="com.example.navigation10fragments.NavFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_screen1">
+
+        <argument android:name="layout_res_id"
+            app:argType="reference"
+            android:defaultValue="@layout/fragment_screen1" />
+
+        <argument android:name="btn_id"
+            app:argType="reference"
+            android:defaultValue="@id/btn_fragment" />
+        <argument android:name="btn_action"
+            app:argType="reference"
+            android:defaultValue="@id/action_btn" />
+
+        <action
+            android:id="@+id/action_btn"
+            app:destination="@id/FragmentPage2" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/FragmentPage2"
+        android:name="com.example.navigation10fragments.NavFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_screen2">
+
+        <argument
+            android:name="layout_res_id"
+            app:argType="reference"
+            android:defaultValue="@layout/fragment_screen2" />
+
+        <argument android:name="btn_id"
+            app:argType="reference"
+            android:defaultValue="@id/btn_fragment" />
+        <argument android:name="btn_action"
+            app:argType="reference"
+            android:defaultValue="@id/action_btn" />
+
+        <action
+            android:id="@+id/action_btn"
+            app:destination="@id/FragmentPage3" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/FragmentPage3"
+        android:name="com.example.navigation10fragments.NavFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_screen3">
+
+        <argument android:name="layout_res_id"
+            app:argType="reference"
+            android:defaultValue="@layout/fragment_screen3" />
+
+        <argument android:name="btn_id"
+            app:argType="reference"
+            android:defaultValue="@id/btn_fragment" />
+        <argument android:name="btn_action"
+            app:argType="reference"
+            android:defaultValue="@id/action_btn" />
+
+        <action
+            android:id="@+id/action_btn"
+            app:destination="@id/FragmentPage4" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/FragmentPage4"
+        android:name="com.example.navigation10fragments.NavFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_screen4">
+
+        <argument android:name="layout_res_id"
+            app:argType="reference"
+            android:defaultValue="@layout/fragment_screen4" />
+
+        <argument android:name="btn_id"
+            app:argType="reference"
+            android:defaultValue="@id/btn_fragment" />
+        <argument android:name="btn_action"
+            app:argType="reference"
+            android:defaultValue="@id/action_btn" />
+
+        <action
+            android:id="@+id/action_btn"
+            app:destination="@id/FragmentPage5" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/FragmentPage5"
+        android:name="com.example.navigation10fragments.NavFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_screen5">
+
+        <argument android:name="layout_res_id"
+            app:argType="reference"
+            android:defaultValue="@layout/fragment_screen5" />
+
+        <argument android:name="btn_id"
+            app:argType="reference"
+            android:defaultValue="@id/btn_fragment" />
+        <argument android:name="btn_action"
+            app:argType="reference"
+            android:defaultValue="@id/action_btn" />
+
+        <action
+            android:id="@+id/action_btn"
+            app:destination="@id/FragmentPage6" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/FragmentPage6"
+        android:name="com.example.navigation10fragments.NavFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_screen6">
+
+        <argument android:name="layout_res_id"
+            app:argType="reference"
+            android:defaultValue="@layout/fragment_screen6" />
+
+        <argument android:name="btn_id"
+            app:argType="reference"
+            android:defaultValue="@id/btn_fragment" />
+        <argument android:name="btn_action"
+            app:argType="reference"
+            android:defaultValue="@id/action_btn" />
+
+        <action
+            android:id="@+id/action_btn"
+            app:destination="@id/FragmentPage7" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/FragmentPage7"
+        android:name="com.example.navigation10fragments.NavFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_screen7">
+
+        <argument android:name="layout_res_id"
+            app:argType="reference"
+            android:defaultValue="@layout/fragment_screen7" />
+
+        <argument android:name="btn_id"
+            app:argType="reference"
+            android:defaultValue="@id/btn_fragment" />
+        <argument android:name="btn_action"
+            app:argType="reference"
+            android:defaultValue="@id/action_btn" />
+
+        <action
+            android:id="@+id/action_btn"
+            app:destination="@id/FragmentPage8" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/FragmentPage8"
+        android:name="com.example.navigation10fragments.NavFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_screen8">
+
+        <argument android:name="layout_res_id"
+            app:argType="reference"
+            android:defaultValue="@layout/fragment_screen8" />
+
+        <argument android:name="btn_id"
+            app:argType="reference"
+            android:defaultValue="@id/btn_fragment" />
+        <argument android:name="btn_action"
+            app:argType="reference"
+            android:defaultValue="@id/action_btn" />
+
+        <action
+            android:id="@+id/action_btn"
+            app:destination="@id/FragmentPage9" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/FragmentPage9"
+        android:name="com.example.navigation10fragments.NavFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_screen9">
+
+        <argument android:name="layout_res_id"
+            app:argType="reference"
+            android:defaultValue="@layout/fragment_screen9" />
+
+        <argument android:name="btn_id"
+            app:argType="reference"
+            android:defaultValue="@id/btn_fragment" />
+        <argument android:name="btn_action"
+            app:argType="reference"
+            android:defaultValue="@id/action_btn" />
+
+        <action
+            android:id="@+id/action_btn"
+            app:destination="@id/FragmentPage10" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/FragmentPage10"
+        android:name="com.example.navigation10fragments.NavFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_screen10">
+
+        <argument android:name="layout_res_id"
+            app:argType="reference"
+            android:defaultValue="@layout/fragment_screen10" />
+
+        <argument android:name="btn_id"
+            app:argType="reference"
+            android:defaultValue="@id/btn_fragment" />
+        <argument android:name="btn_action"
+            app:argType="reference"
+            android:defaultValue="@id/action_btn" />
+
+        <action
+            android:id="@+id/action_btn"
+            app:destination="@id/FragmentPage1" />
+    </fragment>
+
+</navigation>
